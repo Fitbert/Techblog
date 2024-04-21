@@ -1,25 +1,10 @@
-require('dotenv').config();
+const Sequelize = require('sequelize');
 
-module.exports = {
-  "development": {
-    "username": process.env.DB_USER,
-    "password": process.env.DB_PASSWORD,
-    "database": process.env.DB_NAME,
-    "host": "localhost",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": process.env.DB_USER,
-    "password": process.env.DB_PASSWORD,
-    "database": process.env.DB_NAME,
-    "host": "localhost",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": process.env.DB_USER,
-    "password": process.env.DB_PASSWORD,
-    "database": process.env.DB_NAME,
-    "host": "localhost",
-    "dialect": "mysql"
-  }
-};
+// Replace the dotenv package with direct configuration
+const sequelize = new Sequelize('techblog_db', 'root', '123456', {
+  host: 'localhost',
+  dialect: 'mysql',
+  port: 3306
+});
+
+module.exports = sequelize;
