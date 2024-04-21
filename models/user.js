@@ -41,10 +41,10 @@ User.init(
       },
     },
     sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'user',
+    timestamps: false, // To deactivate the timestamp columns
+    freezeTableName: true, // To prevent sequelize from pluralizing table names
+    underscored: true, // To use snake case for automatic table names
+  modelName: 'user', // The name of the
   }
 );
 
