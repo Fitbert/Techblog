@@ -1,21 +1,21 @@
 {
     "development": {
       "username": "root",
-      "password": "YOUR_PASSWORD",
+      "password": "123456",
       "database": "techblog_db",
       "host": "localhost",
       "dialect": "mysql"
     },
     "test": {
       "username": "root",
-      "password": "YOUR_PASSWORD",
+      "password": "123456",
       "database": "techblog_db",
       "host": "localhost",
       "dialect": "mysql"
     },
     "production": {
       "username": "root",
-      "password": "YOUR_PASSWORD",
+      "password": "123456",
       "database": "techblog_db",
       "host": "localhost",
       "dialect": "mysql"

@@ -3,9 +3,8 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
-const helpers = require('./utils/helpers');
-
-const sequelize = require('./config/config.js');
+const helpers = require('./utils/helpers'); // Import helpers
+const sequelize = require('./config/config');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
@@ -15,17 +14,12 @@ const hbs = exphbs.create({ helpers });
 
 const sess = {
   secret: 'Tech blog secret',
-  cookie: {
-    maxAge: 86400000, // 24 hours
-    httpOnly: true,
-    secure: false,
-    sameSite: 'strict',
-  },
+  cookie: {},
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
-    db: sequelize,
-  }),
+    db: sequelize
+  })
 };
 
 app.use(session(sess));
