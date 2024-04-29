@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 
 /* body {
@@ -88,3 +92,9 @@ background-image: radial-gradient( ellipse farthest-corner at 10px 10px , #6ff74
 background-size: 10px 10px;
 color: black;
 }
+
+title {
+	text-decoration: none
+	box-shadow: 6px 5px, #6f6866;
+}
+]

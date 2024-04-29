@@ -13,19 +13,19 @@
 </head>
 
 <body class="flex-column min-100-vh">
-  <nav class="navbar">
+  <nav class="navbar bg-slate-400 bg-opacity-25 w-full">
     <ul>
       <li class="li-inline nav-item"><a href="/">Home</a></li>
       <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
 
-      {{#unless loggedIn}}
-      <li class="li-inline nav-item"><a href="/login">Login</a></li>
-      {{/unless}}
+      {{#if loggedIn}}
       <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
+      {{/if}}
+      <li class="li-inline nav-item"><a href="/login">Login</a></li>
     </ul>
   </nav>
 
-  <header class="hero">
+  <header class="title-hero py-1 bg-slate-400 opacity-25">
     <h1 class="app-title"><a href="/">The Tech Blog</a></h1>
   </header>
 

@@ -1,6 +1,11 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+// Function to compare passwords
+const comparePassword = async (user, pw) => {
+  return await user.checkPassword(pw);
+}
+
 // SIGN UP
 router.post('/', async (req, res) => {
   try {
@@ -35,10 +40,10 @@ router.post('/login', async (req, res) => {
       return;
     }
 
-    const validPassword = user.checkPassword(req.body.password);
+    const validPassword = await comparePassword(user, req.body.password);
 
     if (!validPassword) {
-      res.status(400).json({ message: 'No user account found!' });
+      res.status(400).json({ message: 'Invalid password!' });
       return;
     }
 
@@ -50,7 +55,7 @@ router.post('/login', async (req, res) => {
       res.json({ user, message: 'You are now logged in!' });
     });
   } catch (err) {
-    res.status(400).json({ message: 'No user account found!' });
+    res.status(400).json({ message: 'Error logging in!' });
   }
 });
 

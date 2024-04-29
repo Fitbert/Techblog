@@ -7,21 +7,25 @@
   <title>Dashboard | Tech Blog</title>
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="flex-column min-100-vh">
-  <nav class="navbar">
+<body class="flex-col w-min min-100-vh">
+  <nav class="navbar bg-slate-400 bg-opacity-25 w-full">
     <ul class="flex-row">
       <li class="li-inline nav-item"><a href="/">Home</a></li>
       <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
       <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
     </ul>
+    <header class="title-hero py-1 bg-slate-400 opacity-25">
+    <h1 class="app-title"><a href="/">The Tech Blog</a></h1>
+  </header>
   </nav>
-  <header class="hero">
-    <h1 class="app-title"><a href="/dashboard">Your Dashboard</a></h1>
+  <header class="title-hero py-1 bg-slate-400 opacity-25">
+    <h1 class="title no-underline p-1.5 drop-shadow-lg"><a  href="/dashboard">Your Dashboard</a></h1>
   </header>
 
-  <main class="col-auto">
+  <main class="col-auto grow m-2.5 w-11/12">
     {{{body}}}
   </main>
 
