@@ -1,0 +1,17 @@
+[
+    {
+      "username": "Happy Gilmore",
+      "email": "grammy@hotmail.com",
+      "password": "password1"
+    },
+    {
+      "username": "Bobby Bushay",
+      "email": "waterboy@gmail.com",
+      "password": "password12"
+    },
+    {
+      "username": "Dennis Rodman",
+      "email": "bulls92@aol.com",
+      "password": "password123"
+    }
+  ]

@@ -1,0 +1,20 @@
+[
+    {
+      "title": "Houston, we have a problem.",
+      "description": "Apollo 13, 1995",  
+      "date_created": "April 15, 1995",
+      "user_id": 1
+    },
+    {
+      "title": "George Webber sayings about",
+      "description":"Look, there's nothing wrong with people being happy; but, there's more to life than turning on and screwing to Ravel's 'Bolero",
+      "date_created": "June 2, 2024",
+      "user_id": 2
+    },
+    {
+      "title": "What Dirty Harry",
+      "description": "In that case, I'll have another double Don. Double Don, God, that's going to be difficult to say by the shank of the evening",
+      "date_created": "March 03, 2024",
+      "user_id": 3
+    }
+  ]

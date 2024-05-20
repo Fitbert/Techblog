@@ -1,0 +1,38 @@
+[
+    {
+      "comment_body": "I'm the king of the world!",
+      "date_created": "January 15, 2024",
+      "user_id": 2,
+      "blogPost_id": 1
+    },
+    {
+      "comment_body": "There's no place like home.",
+      "date_created": "June 2, 2024",
+      "user_id": 3,
+      "blogPost_id": 1
+    },
+    {
+      "comment_body": "May the Force be with you. ",
+      "date_created": "May 04, 2024",
+      "user_id": 3,
+      "blogPost_id": 2
+    },
+    {
+      "comment_body": "Carpe diem. Seize the day, boys. Make your lives extraordinary.",
+      "date_created": "February 1, 2024",
+      "user_id": 1,
+      "blogPost_id": 2
+    },
+    {
+      "comment_body": "It's alive! It's alive!",
+      "date_created": "January 28, 2024",
+      "user_id": 2,
+      "blogPost_id": 3
+    },
+    {
+      "comment_body": "Elementary, my dear Watson.",
+      "date_created": "April 30, 2024",
+      "user_id": 1,
+      "blogPost_id": 3
+    }
+  ]

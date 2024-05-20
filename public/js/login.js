@@ -1,3 +1,4 @@
+// already registered user
 async function loginFormHandler(event) {
   event.preventDefault();
 
