@@ -1,7 +1,7 @@
 // Imports
 const sequelize = require("../config/config");
 const { User, BlogPost, Comment } = require("../models");
-const User = require('./User');
+const User = require('../models/User');
 const userData = require("./userData.json");
 const blogPostData = require("./blogPostData.json");
 const commentData = require("./commentData.json");
