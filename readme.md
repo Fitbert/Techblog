@@ -37,7 +37,7 @@ Week-14 Challenge (MVC)
 This application was created as the start of a full stack social network application using a MongoDB database, Express.js routing, and the Mongoose ODM. It sets up the initial CRUD API routes for said application which allow users to be created, searched for, updated, and deleted. Users can also share their thoughts, react to friends' thoughts, create a friend list, and subsequently delete thoughts, reactions, friends, and themselves as a user. Although this application is still at the ground floor of its full potential, the MongoDB database and API middleware routing is an integral first step in leaning about the potential of MongoDB and the Mongoose ODM.
 
 ## URL of Application
-[text](https://git.heroku.com/whispering-cove-34404.git)
+[URl ](https://whispering-cove-34404-6b31b6932b91.herokuapp.com/))
 
 ## Live Screen Recording of Application Functionality
 
